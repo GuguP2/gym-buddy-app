@@ -1,0 +1,13 @@
+* {
+padding: auto;
+margin: auto;
+}
+
+.landing {
+    background-image:url(../images/crossfit-1126999_1280.jpg) ;
+    background-size: cover;
+}
+.about{
+    background-color: slategrey;
+    height: 100%;
+}

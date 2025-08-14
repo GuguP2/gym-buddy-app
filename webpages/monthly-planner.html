@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monthly Planner/title>
+    <title>Monthly Planner</title>
 </head>
 <body>
     <nav>
@@ -12,6 +12,7 @@
     <a href="">Workout</a>
     <a href="contact.html">Contact Us</a>
    </nav>
+   
     <h1>📅 Monthly Planner</h1>
   <div class="container">
     <!-- Calendar -->
@@ -45,29 +46,41 @@
       </table>
     </div>
 
-    <!-- To-do list -->
-    <div class="todo">
-      <h2>To-Do List</h2>
-      <input type="text" id="todo-input" placeholder="New task..." />
-      <button onclick="addTask()">Add</button>
-      <ul id="todo-list"></ul>
+    <!-- To-do list + Grocery list -->
+    <div class="lists">
+      <!-- To-do -->
+      <div class="list-section">
+        <h2>To-Do List</h2>
+        <input type="text" id="todo-input" placeholder="New task..." />
+        <button onclick="addItem('todo-input', 'todo-list')">Add</button>
+        <ul id="todo-list"></ul>
+      </div>
+
+      <!-- Grocery -->
+      <div class="list-section">
+        <h2>Grocery List</h2>
+        <input type="text" id="grocery-input" placeholder="New item..." />
+        <button onclick="addItem('grocery-input', 'grocery-list')">Add</button>
+        <ul id="grocery-list"></ul>
+      </div>
     </div>
   </div>
 
   <script>
-    function addTask() {
-      const input = document.getElementById('todo-input');
-      const task = input.value.trim();
-      if (task) {
+    function addItem(inputId, listId) {
+      const input = document.getElementById(inputId);
+      const value = input.value.trim();
+      if (value) {
         const li = document.createElement('li');
-        li.innerHTML = `${task} <span onclick="removeTask(this)">×</span>`;
-        document.getElementById('todo-list').appendChild(li);
+        li.innerHTML = `${value} <span onclick="removeItem(this)">×</span>`;
+        document.getElementById(listId).appendChild(li);
         input.value = '';
       }
     }
-    function removeTask(el) {
+    function removeItem(el) {
       el.parentElement.remove();
     }
   </script>
+
 </body>
 </html>
