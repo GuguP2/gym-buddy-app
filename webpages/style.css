@@ -2,12 +2,25 @@
 padding: auto;
 margin: auto;
 }
+nav{
+    height: 50px;
+}
+#nav-a{
+text-decoration: none;
+margin-top: 10px;
+padding: 10px;
+display: flex;
+float: left;
+color: ghostwhite;
+font-size: 20px;
+}
+#nav-a:hover{
+color: orange;
+box-shadow: 1px 0px 10px 1px;
+border-radius: 10px;
+}
 
 .landing {
-    background-image:url(../images/crossfit-1126999_1280.jpg) ;
-    background-size: cover;
-}
-.about{
-    background-color: slategrey;
-    height: 100%;
+    background-image:url(../images/gym-6894904_1280.jpg);
+    height: 1000px;
 }
