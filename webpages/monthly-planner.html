@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Planner/title>
+</head>
+<body>
+    <h1>📅 Monthly Planner</h1>
+  <div class="container">
+    <!-- Calendar -->
+    <div class="calendar">
+      <h2>August 2025</h2>
+      <table>
+        <tr>
+          <th>Sun</th>
+          <th>Mon</th>
+          <th>Tue</th>
+          <th>Wed</th>
+          <th>Thu</th>
+          <th>Fri</th>
+          <th>Sat</th>
+        </tr>
+        <tr>
+          <td></td><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td>
+        </tr>
+        <tr>
+          <td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td>
+        </tr>
+        <tr>
+          <td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td>
+        </tr>
+        <tr>
+          <td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td>
+        </tr>
+        <tr>
+          <td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- To-do list -->
+    <div class="todo">
+      <h2>To-Do List</h2>
+      <input type="text" id="todo-input" placeholder="New task..." />
+      <button onclick="addTask()">Add</button>
+      <ul id="todo-list"></ul>
+    </div>
+  </div>
+
+  <script>
+    function addTask() {
+      const input = document.getElementById('todo-input');
+      const task = input.value.trim();
+      if (task) {
+        const li = document.createElement('li');
+        li.innerHTML = `${task} <span onclick="removeTask(this)">×</span>`;
+        document.getElementById('todo-list').appendChild(li);
+        input.value = '';
+      }
+    }
+    function removeTask(el) {
+      el.parentElement.remove();
+    }
+  </script>
+</body>
+</html>
