@@ -2,6 +2,12 @@
 padding: auto;
 margin: auto;
 }
+.landing {
+    background-image:url(../images/gym-6894904_1280.jpg);
+    color: ghostwhite;
+    background-size:cover;
+}
+
 nav{
     height: 50px;
 }
@@ -15,12 +21,21 @@ color: ghostwhite;
 font-size: 20px;
 }
 #nav-a:hover{
-color: orange;
+color: white;
 box-shadow: 1px 0px 10px 1px;
 border-radius: 10px;
 }
 
-.landing {
-    background-image:url(../images/gym-6894904_1280.jpg);
-    height: 1000px;
+
+
+@media (max-width: 600px) {
+  .download-app {
+    padding: 1.5rem;
+  }
+  .download-app h2 {
+    font-size: 1.5rem;
+  }
+  .download-app button {
+    width: 100%;
+  }
 }
