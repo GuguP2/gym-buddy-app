@@ -9,16 +9,29 @@
      <nav><a href=""></a></nav>
     <nav><a href=""></a></nav>
     <nav><a href=""></a></nav>
-</body>
-<div>
-     <section id="signup" class="form-section">
-    <h3>Sign Up</h3>
-    <form action="/signup" method="POST">
-      <input type="text" name="name" placeholder="Full Name" required />
-      <input type="email" name="email" placeholder="Email" required />
-      <input type="password" name="password" placeholder="Password" required />
-      <input type="submit" value="Create Account" />
+    <div class="signup-container">
+    <h2>Create an Account</h2>
+    <form action="#" method="POST">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Choose a username" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter password" required />
+
+      <label for="confirm-password">Confirm Password</label>
+      <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter password" required />
+
+      <input type="submit" value="Sign Up" />
     </form>
-  </section>
-</div>
+    <div class="extra-links">
+      <p>Already have an account? <a href="#">Login</a></p>
+    </div>
+  </div>
+</body>
 </html>
