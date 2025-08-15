@@ -1,42 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
-</head>
-<body>
-   <nav>
-    <a href="home.html">Home</a>
-    <a href="monthly-planner.html">Planner</a>
-    <a href="">Workout</a>
-    <a href="contact.html">Contact Us</a>
-   </nav>
-   <div class="login-container">
-    <h2>Login</h2>
-    <form action="#" method="POST">
-      <label for="username">Username</label>
-      <input type="text" id="username" name="username" placeholder="Enter username" required />
-
-      <label for="password">Password</label>
-      <input type="password" id="password" name="password" placeholder="Enter password" required />
-
-      <input type="submit" value="Login" />
-    </form>
-    <div class="extra-links">
-      <p><a href="#">Forgot password?</a></p>
-      <p>Don't have an account? <a href="#">Sign up</a></p>
+  </head>
+  <body>
+    <!--navgigation bar-->
+    <div class="navbar">
+      <img
+        src="https://img.icons8.com/?size=100&id=122692&format=png&color=000000"
+        alt="gym logo"
+        id="logo"
+        width="5%"
+      />
+      <nav>
+        <a href="home.html" >Home</a>
+        <a href="monthly-planner.html">Planner</a>
+        <a href="Workout.html">Workout</a>
+        <a href="contact.html" >Contact Us</a>
+      </nav>
     </div>
-  </div>
-</body>
-<div>
+    <div class="login-container">
+      <h2>Login</h2>
+      <form action="#" method="POST">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter username"
+          required
+        />
+
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter password"
+          required
+        />
+
+        <input type="submit" value="Login" />
+      </form>
+      <div class="extra-links">
+        <p><a href="#">Forgot password?</a></p>
+        <p>Don't have an account? <a href="#">Sign up</a></p>
+      </div>
+    </div>
+  </body>
+  <div>
     <section id="login" class="form-section">
-    <h3>Login</h3>
-    <form action="/login" method="POST">
-      <input type="email" name="email" placeholder="Email" required />
-      <input type="password" name="password" placeholder="Password" required />
-      <input type="submit" value="Login" />
-    </form>
-  </section>
-</div>
+      <h3>Login</h3>
+      <form action="/login" method="POST">
+        <input type="email" name="email" placeholder="Email" required />
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
+        <input type="submit" value="Login" />
+      </form>
+    </section>
+  </div>
 </html>

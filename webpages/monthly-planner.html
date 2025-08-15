@@ -1,87 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="style.css" /> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Monthly Planner</title>
-</head>
-<body class="Planner">
-    <nav>
-    <a href="home.html">Home</a>
-    <a href="monthly-planner.html">Planner</a>
-    <a href="">Workout</a>
-    <a href="contact.html">Contact Us</a>
-   </nav>
-   
-    <h1> Monthly Planner</h1>
-  <div class="container">
-    <!-- Calendar -->
-    <div class="calendar">
-      <h2>August 2025</h2>
-      <table>
-        <tr>
-          <th>Sun</th>
-          <th>Mon</th>
-          <th>Tue</th>
-          <th>Wed</th>
-          <th>Thu</th>
-          <th>Fri</th>
-          <th>Sat</th>
-        </tr>
-        <tr>
-          <td></td><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td>
-        </tr>
-        <tr>
-          <td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td>
-        </tr>
-        <tr>
-          <td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td>
-        </tr>
-        <tr>
-          <td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td>
-        </tr>
-        <tr>
-          <td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td>
-        </tr>
-      </table>
+  </head>
+  <body class="Planner">
+    <!--navgigation bar-->
+    <div class="navbar">
+      <img
+        src="https://img.icons8.com/?size=100&id=122692&format=png&color=000000"
+        alt="gym logo"
+        id="logo"
+        width="5%"
+      />
+      <nav>
+        <a href="home.html" >Home</a>
+        <a href="monthly-planner.html">Planner</a>
+        <a href="Workout.html">Workout</a>
+        <a href="contact.html" >Contact Us</a>
+      </nav>
     </div>
 
-    <!-- To-do list + Grocery list -->
-    <div class="lists">
-      <!-- To-do -->
-      <div class="list-section">
-        <h2>To-Do List</h2>
-        <input type="text" id="todo-input" placeholder="New task..." />
-        <button onclick="addItem('todo-input', 'todo-list')">Add</button>
-        <ul id="todo-list"></ul>
+    <h1>Monthly Planner</h1>
+    <div class="container">
+      <!-- Calendar -->
+      <div class="calendar">
+        <h2>August 2025</h2>
+        <table>
+          <tr>
+            <th>Sun</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+          </tr>
+          <tr>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+          </tr>
+        </table>
       </div>
 
-      <!-- Grocery -->
-      <div class="list-section">
-        <h2>Grocery List</h2>
-        <input type="text" id="grocery-input" placeholder="New item..." />
-        <button onclick="addItem('grocery-input', 'grocery-list')">Add</button>
-        <ul id="grocery-list"></ul>
+      <!-- To-do list + Grocery list -->
+      <div class="lists">
+        <!-- To-do -->
+        <div class="list-section">
+          <h2>To-Do List</h2>
+          <input type="text" id="todo-input" placeholder="New task..." />
+          <button onclick="addItem('todo-input', 'todo-list')">Add</button>
+          <ul id="todo-list"></ul>
+        </div>
+
+        <!-- Grocery -->
+        <div class="list-section">
+          <h2>Grocery List</h2>
+          <input type="text" id="grocery-input" placeholder="New item..." />
+          <button onclick="addItem('grocery-input', 'grocery-list')">
+            Add
+          </button>
+          <ul id="grocery-list"></ul>
+        </div>
       </div>
     </div>
-  </div>
 
-  <script>
-    function addItem(inputId, listId) {
-      const input = document.getElementById(inputId);
-      const value = input.value.trim();
-      if (value) {
-        const li = document.createElement('li');
-        li.innerHTML = `${value} <span onclick="removeItem(this)">×</span>`;
-        document.getElementById(listId).appendChild(li);
-        input.value = '';
+    <script>
+      function addItem(inputId, listId) {
+        const input = document.getElementById(inputId);
+        const value = input.value.trim();
+        if (value) {
+          const li = document.createElement("li");
+          li.innerHTML = `${value} <span onclick="removeItem(this)">×</span>`;
+          document.getElementById(listId).appendChild(li);
+          input.value = "";
+        }
       }
-    }
-    function removeItem(el) {
-      el.parentElement.remove();
-    }
-  </script>
-
-</body>
+      function removeItem(el) {
+        el.parentElement.remove();
+      }
+    </script>
+  </body>
 </html>
