@@ -10,20 +10,68 @@ margin: auto;
 
 nav{
     height: 50px;
+    display: flex;
 }
+.navbar{
+  background-color: burlywood;
+  display: flex;
+}
+#logo{
+  background-color: blue;
+} 
 #nav-a{
 text-decoration: none;
-margin-top: 10px;
-padding: 10px;
-display: flex;
-float: left;
 color: ghostwhite;
 font-size: 20px;
+background-color: blue;
+padding: 15px;
 }
+
 #nav-a:hover{
 color: white;
 box-shadow: 1px 0px 10px 1px;
 border-radius: 10px;
+}
+.home-container{
+  background-color: brown;
+  max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 20px;
+      gap: 40px;
+      align-items: center;
+      text-align: center;
+      display: flex;
+     
+}
+h1{
+  padding: 20px;
+}
+.btn-div{
+  text-align: center;
+  background-color: chocolate;
+}
+button{
+  background-color: #c1876b;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 20px;
+}
+.about{
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 20px;
+      padding: 20px;
+}
+table{
+  background-color: bisque;
+}
+
+.Planner{
+  background-color: beige;
+  color: whitesmoke;
 }
 
 
