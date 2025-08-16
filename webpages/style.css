@@ -4,7 +4,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 .landing {
-  background-image:url(../images/B1.png);
+  background-image: url(../images/B1.png);
   color: ghostwhite;
   background-size: cover;
 }
@@ -31,7 +31,7 @@ nav a {
   padding: 10px;
 }
 
-#nav-a:hover {
+nav a:hover {
   color: white;
   box-shadow: 1px 0px 10px 1px;
   border-radius: 2px;
@@ -41,24 +41,21 @@ nav a {
 .home-container {
   margin: 0 auto;
   width: 1100px;
-  padding-top: 10px;
 }
 
 .download-app h1 {
-  padding: 10px;
   text-align: left;
-  font-size: 40px;
+  font-size: 30px;
   color: white;
 }
 .about {
   display: flex;
 }
 .learn-more {
-  padding: 20px;
   width: 700px;
 }
 .learn-more h2 {
-  font-size: 44px;
+  font-size: 30px;
 }
 .learn-more p {
   font-size: 18px;
@@ -68,8 +65,8 @@ nav a {
   margin-left: 80px;
 }
 button {
-  background-color: whitesmoke;
-  color: black;
+  background-color: black;
+  color: white;
   border: none;
   padding: 10px;
   border-radius: 4px;
@@ -77,33 +74,36 @@ button {
   font-size: 20px;
   margin: 10px;
   width: 150px;
+  box-shadow: 1px 1px 5px grey;
 }
-button a{
+button:hover {
+  box-shadow: 1px 2px 20px grey;
+}
+button a {
   text-decoration: none;
 }
 
-button a:active{
+button a:active {
   color: brown;
 }
-button a:hover{
+button a:link {
+  color: white;
+}
+button a:hover {
   color: red;
 }
 table {
   background-color: bisque;
 }
 
-.Planner {
-  background-color: beige;
-  color: whitesmoke;
-}
 /*contact page*/
-.contact-body{
-  background-image:url(../images/1.png);
+.contact-body {
+  background-image: url(../images/1.png);
   background-size: cover;
   opacity: 94%;
 }
-.contact-container{
- max-width: 800px;
+.contact-container {
+  max-width: 800px;
   margin: 50px auto;
   background-color: #ffffff;
   padding: 30px 40px;
@@ -115,7 +115,7 @@ table {
   display: block;
   margin-bottom: 8px;
   font-weight: 600;
-  color: #555;
+  color: black;
 }
 
 /* Input and textarea */
@@ -147,8 +147,8 @@ table {
   display: block;
   width: 100%;
   padding: 14px;
-  background-color: peachpuff;
-  color: black;
+  background-color: black;
+  color: white;
   font-size: 18px;
   font-weight: 600;
   border: none;
@@ -162,10 +162,8 @@ table {
 }
 
 /*Planner section*/
-.Planner{
-  background-image:url(../images/3.png);
-  background-size: cover;
-  color: black;
+.Planner {
+  background-color: whitesmoke;
 }
 /* Header */
 h1 {
@@ -217,7 +215,7 @@ h1 {
 }
 
 .calendar th {
-  background-color: #007bff;
+  background-color: black;
   color: white;
   font-weight: 600;
 }
@@ -261,7 +259,7 @@ h1 {
 .list-section button {
   padding: 10px 15px;
   font-size: 16px;
-  background-color: #007bff;
+  background-color: black;
   color: white;
   border: none;
   border-radius: 6px;
@@ -269,7 +267,7 @@ h1 {
 }
 
 .list-section button:hover {
-  background-color: #0056b3;
+  background-color: black;
 }
 
 /* List items */
@@ -301,6 +299,204 @@ h1 {
 .list-section li span:hover {
   transform: scale(1.2);
 }
+/*Workout section*/
+.workout-body {
+  margin: 0 auto;
+}
+.workout-one {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.section-one {
+  box-shadow: 1px 2px 5px 1px rgb(210, 209, 209);
+  border: none;
+  width: 81%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: gray;
+  display: flex;
+}
+.section-one h2 {
+  font-size: 18px;
+}
+.section-one button {
+  font-size: 15px;
+  background-color: black;
+  width: 20%;
+  padding: 6.5px;
+  color: white;
+}
+.section-one input {
+  font-size: 15px;
+  width: 45%;
+  border: 0.5px solid gray;
+  font-size: 12px;
+  padding: 10px;
+}
+.workout-history {
+  display: flex;
+  gap: 10px;
+  box-shadow: 1px 2px 5px 1px rgb(210, 209, 209);
+  width: 80%;
+  padding: 10px;
+}
+.section-two {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 1px 2px 5px 1px rgb(210, 209, 209);
+  width: 30%;
+  padding: 10px;
+}
+.section-two input {
+  width: 30%;
+  height: 20px;
+}
+.section-two button {
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+}
+.section-three {
+  box-shadow: 1px 2px 5px 1px rgb(210, 209, 209);
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 2;
+}
+.section-four {
+  box-shadow: 1px 2px 5px 1px rgb(210, 209, 209);
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+/*login page*/
+.login-container {
+  width: 800px;
+  margin: 50px auto;
+  background-color: #f1f1f1;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+/* Input and textarea */
+.login-container input,
+.login-container textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.login-container h2 {
+  text-align: center;
+  font-size: 36px;
+}
+.login-container input {
+  margin: 20px;
+  width: 80%;
+}
+.login-container input:focus {
+  color: rgb(255, 136, 0);
+}
+.extra-links {
+  text-align: center;
+  margin: 30px;
+}
+.extra-links a {
+  text-decoration: none;
+  color: grey;
+}
+.extra-links a:hover {
+  color: blue;
+}
+.extra-links a:active {
+  color: red;
+}
+/* Login button */
+.login-container button {
+  display: block;
+  width: 30%;
+  padding: 14px;
+  background-color: peachpuff;
+  color: black;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0 auto;
+}
+
+.login-container button:hover {
+  background-color: #99b7d6;
+}
+/*create account section*/
+.signup-container {
+  width: 470px;
+  background-color: #dbdada;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+/* Input and textarea */
+.signup-container input,
+.signup-container textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  border: 1px solid #7c7676;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.signup-container h2 {
+  text-align: center;
+  font-size: 33px;
+}
+.signup-container input {
+  margin: 10px;
+  width: 80%;
+}
+.signup-container input:focus {
+  color: rgb(36, 35, 34);
+}
+.extra-links {
+  text-align: center;
+  margin: 30px;
+}
+.extra-links a {
+  text-decoration: none;
+  color: grey;
+}
+.extra-links a:hover {
+  color: blue;
+}
+.extra-links a:active {
+  color: red;
+}
+/* signup button */
+.signup-container button {
+  display: block;
+  width: 30%;
+  padding: 14px;
+  background-color: peachpuff;
+  color: black;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0 auto;
+}
+
+.signup-container button:hover {
+  background-color: #99b7d6;
+}
 /*mobile compatability*/
 @media (max-width: 600px) {
   /*home section*/
@@ -314,7 +510,7 @@ h1 {
   .download-app button {
     width: 100%;
   }
-   .container {
+  .container {
     flex-direction: column;
     padding: 10px;
   }
