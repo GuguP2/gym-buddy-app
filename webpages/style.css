@@ -4,7 +4,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 .landing {
-  background-image: url(../images/B1.png);
+  background-image: url(../images/crossfit-1126999_1280.jpg);
   color: ghostwhite;
   background-size: cover;
 }
@@ -37,34 +37,20 @@ nav a:hover {
   border-radius: 2px;
 }
 
-/*landing container*/
-.home-container {
-  margin: 0 auto;
-  width: 1100px;
+/*landing page*/
+.home-container{
+  display: flex;
+  width: 90%;
+  margin-top:50px;
 }
-
-.download-app h1 {
-  text-align: left;
-  font-size: 30px;
+ .icons h1{
   color: white;
 }
-.about {
-  display: flex;
+.about{
+  width: 40%;
+  line-height: 2;
 }
-.learn-more {
-  width: 700px;
-}
-.learn-more h2 {
-  font-size: 30px;
-}
-.learn-more p {
-  font-size: 18px;
-  line-height: 1.8;
-}
-.btn-div {
-  margin-left: 80px;
-}
-button {
+.home-container button {
   background-color: black;
   color: white;
   border: none;
@@ -91,9 +77,6 @@ button a:link {
 }
 button a:hover {
   color: red;
-}
-table {
-  background-color: bisque;
 }
 
 /*contact page*/
