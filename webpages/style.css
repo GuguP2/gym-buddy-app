@@ -498,8 +498,26 @@ h1 {
 .signup-container button:hover {
   background-color: #99b7d6;
 }
-/*mobile compatability*/
-@media (max-width: 600px) {
+/*mobile view compatability*/
+@media (max-width: 1200px) {
+  /*images*/
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+  /*navigation bar*/ 
+  .navbar{
+    background-color: rgb(5, 51, 5);
+  }
+  nav a{
+    display: flex;
+    flex-direction: row;
+  }
+  .landing {
+  background-image: url(../images/dumbbell-1966704_1280.jpg);
+  color: ghostwhite;
+  background-size:cover;
+}
   /*home section*/
   .download-app {
     padding: 1.5rem;
