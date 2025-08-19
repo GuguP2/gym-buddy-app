@@ -9,54 +9,62 @@
   background-size: cover;
 }
 /*naviagtion bar*/
-.navbar {
+
+header {
   height: 50px;
   background-color: black;
   padding: 20px;
   display: flex;
-  align-items: center;
-  justify-content: space-between; /* pushes nav to the far right */
+    justify-content: space-between; /* pushes nav to the far right */
+
 }
 #logo {
+  margin-left: 2px;
+  width: 5%;
+  padding: 5px;
+}
+.navbar {
   display: flex;
-  margin-left: 20px;
-}
-nav {
+  align-items: center;
+  justify-content: space-between; /* pushes nav to the far right */
   margin-right: 30px;
+  gap: 90px;
 }
-nav a {
+.navbar a {
   text-decoration: none;
   color: ghostwhite;
-  font-size: 20px;
+  font-size: 30px;
   padding: 10px;
 }
 
-nav a:hover {
+.navbar a:hover {
   color: white;
   box-shadow: 1px 0px 10px 1px;
   border-radius: 2px;
 }
 
 /*landing page*/
-.home-container{
+.home-container {
   display: flex;
   width: 90%;
-  margin-top:50px;
+  margin-top: 50px;
 }
-.home-container #cellphone{
+.home-container #cellphone {
   box-shadow: -0px 1px grey;
   border: none;
 }
- .icons h1{
+.icons h1 {
   color: green;
 }
-.icons img:hover{
- box-shadow: 1px 1px 19px grey;
- border-radius: 20px;
+.icons img:hover {
+  box-shadow: 1px 1px 19px grey;
+  border-radius: 20px;
 }
-.about{
+.about {
   width: 40%;
   line-height: 2;
+  color: white;
+  font-size: 20px;
 }
 .home-container button {
   background-color: black;
@@ -499,43 +507,36 @@ h1 {
   background-color: #99b7d6;
 }
 /*mobile view compatability*/
-@media (max-width: 1200px) {
-  /*images*/
-  img{
-    max-width: 100%;
-    height: auto;
-  }
-  /*navigation bar*/ 
+@media  screen and (max-width: 600px) {
+  /*navigation panel*/
   .navbar{
-    background-color: rgb(5, 51, 5);
-  }
-  nav a{
+    background-color: yellow;
     display: flex;
-    flex-direction: row;
-  }
-  .landing {
-  background-image: url(../images/dumbbell-1966704_1280.jpg);
-  color: ghostwhite;
-  background-size:cover;
-}
-  /*home section*/
-  .download-app {
-    padding: 1.5rem;
-  }
-  .download-app h2 {
-    font-size: 1.5rem;
-  }
-  /*planner section*/
-  .download-app button {
-    width: 100%;
-  }
-  .container {
-    flex-direction: column;
-    padding: 10px;
   }
 
-  .calendar,
-  .lists {
-    width: 100%;
+
+   /*home container*/
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
+  .home-container #cellphone {
+    display: none;
+  }
+  .icons h1 {
+    font-size: 24px;
+  }
+  .icons img {
+    width: 25%;
+    margin-bottom: 20px;
+  }
+  .home-container .about {
+    width: 350px;
+  }
+  
 }
+
+ 
+
