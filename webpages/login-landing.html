@@ -8,20 +8,42 @@
   </head>
   <body>
     <!--navgigation bar-->
-    <div class="navbar">
+    <header>
       <img
         src="https://img.icons8.com/?size=100&id=122692&format=png&color=000000"
         alt="gym logo"
         id="logo"
         width="5%"
       />
-      <nav>
-        <a href="home.html" >Home</a>
+      <nav class="navbar">
+        <a href="home.html">Home</a>
         <a href="monthly-planner.html">Planner</a>
         <a href="Workout.html">Workout</a>
-        <a href="contact.html" >Contact Us</a>
+        <a href="contact.html">Contact Us</a>
       </nav>
+      <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="home.html">Home</a>
+    <a href="monthly-planner.html">Planner</a>
+    <a href="Workout.html">Workout</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    hamburger.addEventListener("click", () => {
+      mobileMenu.classList.toggle("show");
+    });
+  </script>
+    </header>
+    <!--login container-->
     <div class="login-container">
       <h2>Login</h2>
       <form action="#" method="POST">

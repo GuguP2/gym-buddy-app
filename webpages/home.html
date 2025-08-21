@@ -22,6 +22,27 @@
         <a href="Workout.html">Workout</a>
         <a href="contact.html">Contact Us</a>
       </nav>
+      <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="home.html">Home</a>
+    <a href="monthly-planner.html">Planner</a>
+    <a href="Workout.html">Workout</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    hamburger.addEventListener("click", () => {
+      mobileMenu.classList.toggle("show");
+    });
+  </script>
     </header>
 
     <!--download section-->

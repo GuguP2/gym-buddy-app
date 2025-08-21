@@ -9,39 +9,64 @@
   background-size: cover;
 }
 /*naviagtion bar*/
-
 header {
-  height: 50px;
-  background-color: black;
-  padding: 20px;
-  display: flex;
-    justify-content: space-between; /* pushes nav to the far right */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: black;
+      border-bottom: 1px solid #ddd;
+    }
 
-}
-#logo {
-  margin-left: 2px;
-  width: 5%;
-  padding: 5px;
-}
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* pushes nav to the far right */
-  margin-right: 30px;
-  gap: 90px;
-}
-.navbar a {
-  text-decoration: none;
-  color: ghostwhite;
-  font-size: 30px;
-  padding: 10px;
-}
+    #logo {
+      width: 10%;
+    }
 
-.navbar a:hover {
-  color: white;
-  box-shadow: 1px 0px 10px 1px;
-  border-radius: 2px;
-}
+    .navbar {
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #111;
+      font-weight: 600;
+    }
+
+    /* Hamburger button */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
+
+    .hamburger span {
+      width: 25px;
+      height: 3px;
+      background: #111;
+      transition: 0.3s;
+    }
+
+/* Mobile menu hidden by default */
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      background: black;
+      padding: 10px;
+    }
+
+    .mobile-menu a {
+      padding: 10px;
+      text-decoration: none;
+      color: #111;
+      border-radius: 5px;
+    }
+
+    .mobile-menu a:hover {
+      background: #eee;
+    }
+
 
 /*landing page*/
 .home-container {
@@ -506,14 +531,23 @@ h1 {
 .signup-container button:hover {
   background-color: #99b7d6;
 }
+
 /*mobile view compatability*/
 @media  screen and (max-width: 600px) {
   /*navigation panel*/
-  .navbar{
-    background-color: yellow;
-    display: flex;
-  }
+      .navbar {
+        display: none;
+      }
 
+      .hamburger {
+        display: flex;
+        background-color: green;
+      }
+
+      .mobile-menu.show {
+        display: flex;
+      }
+    
 
    /*home container*/
   .home-container {
@@ -535,7 +569,13 @@ h1 {
   .home-container .about {
     width: 350px;
   }
+  .home-container p{
+    font-size: 14px;
+  }
+  .contact-container {
+  width: 65%;
   
+}
 }
 
  
